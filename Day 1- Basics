@@ -1,0 +1,149 @@
+# Day 1 — Digital Logic Basics
+
+## Topics Covered
+
+* Decimal Number System
+* Binary Number System
+* Decimal to Binary Conversion
+* Why Computers Use Binary
+
+## Practice Image
+
+
+
+---
+
+## Decimal Number System
+
+The decimal number system is the standard number system used in daily life.
+
+It uses 10 digits:
+
+* 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
+Example:
+
+* 15
+* 27
+* 103
+
+Each position represents powers of 10.
+
+Example:
+15 = (1 × 10) + (5 × 1)
+
+---
+
+## Binary Number System
+
+Binary is a number system used by computers.
+
+It uses only two digits:
+
+* 0
+* 1
+
+Binary works well in digital electronics because circuits can easily represent:
+
+* LOW/OFF = 0
+* HIGH/ON = 1
+
+Examples:
+
+* 0
+* 1
+* 10
+* 101
+* 111
+
+---
+
+## Why Computers Use Binary
+
+Computers use binary because electronic circuits and transistors can reliably represent only two stable voltage states:
+
+* LOW voltage → 0
+* HIGH voltage → 1
+
+Advantages of binary:
+
+* Simpler hardware design
+* Faster processing
+* Less chance of errors
+* More reliable communication
+* Lower power consumption
+
+---
+
+# Decimal to Binary Conversion
+
+## Steps to Convert Decimal to Binary
+
+1. Divide the decimal number by 2
+2. Write the remainder (0 or 1)
+3. Divide the quotient again by 2
+4. Repeat until quotient becomes 0
+5. Read the remainders from bottom to top
+
+---
+
+## Example 1 — Convert Decimal 5 to Binary
+
+Step 1:
+5 ÷ 2 = 2 remainder 1
+
+Step 2:
+2 ÷ 2 = 1 remainder 0
+
+Step 3:
+1 ÷ 2 = 0 remainder 1
+
+Now read remainders from bottom to top:
+
+101
+
+Therefore:
+5 (decimal) = 101 (binary)
+
+---
+
+## Example 2 — Convert Decimal 7 to Binary
+
+Step 1:
+7 ÷ 2 = 3 remainder 1
+
+Step 2:
+3 ÷ 2 = 1 remainder 1
+
+Step 3:
+1 ÷ 2 = 0 remainder 1
+
+Read from bottom to top:
+
+111
+
+Therefore:
+7 (decimal) = 111 (binary)
+
+---
+
+## Decimal to Binary Conversion Table
+
+| Decimal | Binary |
+| ------- | ------ |
+| 5       | 101    |
+| 7       | 111    |
+| 10      | 1010   |
+| 15      | 1111   |
+| 17      | 10001  |
+
+---
+
+## Learning Outcome
+
+Built foundational understanding of:
+
+* Decimal and binary number systems
+* Why computers use binary representation
+* Step-by-step decimal to binary conversion process
+* Basic digital system representation using ON/OFF states
