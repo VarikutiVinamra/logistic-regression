@@ -28,3 +28,4 @@ This repository is used to document my learning journey and practice in digital 
 - FPGA implementations
 - Timing analysis
 - Digital system design examples
+
