@@ -1,31 +1,30 @@
-# Logistic Regression Classifier
+# Digital Logic Design
 
-## Overview
-This project implements a Logistic Regression model using Python and Scikit-learn for binary classification.
+This repository contains my learning and project work related to Digital Logic Design, FPGA systems, and hardware design concepts.
 
-## Objective
-The goal of this project is to analyze data and predict outcomes using supervised machine learning techniques.
+## Topics Covered
+- Logic Gates
+- Combinational Circuits
+- Sequential Circuits
+- Flip-Flops
+- Counters
+- Registers
+- Multiplexers
+- FPGA Basics
+- VHDL Design
 
-## Technologies Used
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
+## Tools & Technologies
+- VHDL
+- Vivado
+- FPGA
+- Digital Electronics
 
-## Workflow
-1. Data preprocessing
-2. Feature selection
-3. Train-test split
-4. Model training
-5. Evaluation
+## Purpose
+This repository is used to document my learning journey and practice in digital system design and hardware engineering.
 
-## Results
-- Accuracy: XX%
-- Confusion Matrix
-- Classification Report
-
-## Future Improvements
-- Hyperparameter tuning
-- Feature engineering
-- Cross-validation
+## Future Additions
+- VHDL mini projects
+- Simulation waveforms
+- FPGA implementations
+- Timing analysis
+- Digital system design examples
