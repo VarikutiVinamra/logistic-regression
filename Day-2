@@ -1,0 +1,214 @@
+# Day 2 — Signed Binary Numbers and Number System Conversions
+
+## Topics Covered
+
+* Signed Binary Representation
+* MSB (Most Significant Bit)
+* Positive vs Negative Binary Numbers
+* 1’s Complement
+* 2’s Complement
+* Binary to Octal Conversion
+* Binary to Hexadecimal Conversion
+* Hexadecimal to Decimal Conversion
+
+---
+
+# Signed Binary Representation
+
+In signed binary numbers, the leftmost bit (MSB — Most Significant Bit) represents the sign of the number.
+
+| MSB Value | Meaning         |
+| --------- | --------------- |
+| 0         | Positive Number |
+| 1         | Negative Number |
+
+---
+
+# Positive Number Representation
+
+Decimal number:
+17
+
+Unsigned binary representation:
+10001
+
+However, in signed representation, the MSB is reserved for sign information.
+
+Since:
+
+* MSB = 1 indicates negative number
+* 10001 starts with 1
+
+it cannot represent +17 in signed 5-bit representation.
+
+Therefore, an extra bit is required.
+
+Signed binary representation of +17:
+
+```text id="g8m2xv"
+010001
+```
+
+---
+
+# Why 5 Bits are Insufficient for +17
+
+Using 5-bit signed representation:
+
+* Range = -16 to +15
+
+Since:
+17 > 15
+
+5 bits are not enough.
+
+Therefore:
+6 bits are required.
+
+---
+
+# Negative Number Representation Using 2’s Complement
+
+To convert a positive binary number into negative representation:
+
+## Step 1 — Find 1’s Complement
+
+Invert all bits.
+
+Example:
+
+```text id="n4v8q1"
+010001 → 101110
+```
+
+---
+
+## Step 2 — Add 1
+
+```text id="m7x2k5"
+101110
++000001
+--------
+101111
+```
+
+Therefore:
+
+```text id="p3w9r6"
+-17 = 101111
+```
+
+---
+
+# Final Representations
+
+| Decimal | Binary | Octal | Hexadecimal |
+| ------- | ------ | ----- | ----------- |
+| +17     | 010001 | 21    | 0x11        |
+| -17     | 101111 | 57    | 0x2F        |
+
+---
+
+# Binary to Octal Conversion
+
+## Steps
+
+1. Start grouping binary digits from LSB (right side)
+2. Group bits into sets of 3
+3. Convert each group into octal digit
+
+Example:
+
+```text id="r5k1m8"
+010001
+```
+
+Grouping:
+
+```text id="v9n2x4"
+01 000 1
+→ 001 000 001
+```
+
+Octal:
+
+```text id="t7q4p2"
+21
+```
+
+---
+
+# Binary to Hexadecimal Conversion
+
+## Steps
+
+1. Group binary digits into sets of 4 from right side
+2. Convert each group into hexadecimal equivalent
+
+Example:
+
+```text id="x8m3v5"
+010001
+→ 0001 0001
+```
+
+Hexadecimal:
+
+```text id="y2p7n4"
+0x11
+```
+
+---
+
+# Hexadecimal to Decimal Conversion
+
+## Example
+
+Convert:
+
+```text id="w4r8m1"
+0x3A
+```
+
+### Step 1
+
+Identify hexadecimal digits:
+
+* 3
+* A = 10
+
+### Step 2
+
+Multiply each digit using powers of base 16
+
+```text id="q6x1p9"
+(3 × 16¹) + (10 × 16⁰)
+```
+
+### Step 3
+
+Calculate values
+
+```text id="z5m8v2"
+(3 × 16) + (10 × 1)
+= 48 + 10
+= 58
+```
+
+Therefore:
+
+```text id="u7k3n6"
+0x3A = 58
+```
+
+---
+
+# Key Concepts Learned
+
+* MSB stores sign information in signed binary numbers
+* Positive signed numbers begin with 0
+* Negative signed numbers begin with 1
+* 2’s complement is used to represent negative numbers
+* Octal conversion uses groups of 3 bits
+* Hexadecimal conversion uses groups of 4 bits
+* Hexadecimal numbers use base 16
